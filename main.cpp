@@ -106,9 +106,13 @@ using namespace std;
 // ==================== Main Function ====================
 int main() {
     Student S1("Cs", 4);
+    Student S2("BI", 1);
+    Student* students = new Student();
+    students[0] = S1;
+    students[1] = S2;
     Instructor I1("Physics", 5);
     Course C1("CSEN101", "Programming", 100, students, 50);
-    C1.addStudent(S1);
+    C1.addStudent(students[0]);
 
     return 0;
 }
