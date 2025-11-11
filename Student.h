@@ -3,8 +3,15 @@
 
 #include "Person.h"
 #include <string>
-#using namespace std;
-//#write student class here
+class Student {
+private: 
+	int yearLevel;
+	std:: string major;
+public: 
+	Student();
+	Student(std::string major, int yearLevel);
+	void display();
+   };
 
 
 
